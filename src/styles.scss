@@ -1,0 +1,46 @@
+@import "./scss/reset";
+@import "./scss/mixin";
+@import "./scss/variables";
+
+.header{
+    &__informatives-top{
+        background-color: $darkPurple;
+        color: $white;
+        padding: 7px;
+
+        @include flex();
+
+        &--text{
+            @include flex(center, flex-end);
+
+            font-size: calculator-rem(12);
+            font-weight: 300;
+
+            &:after{
+                content: "";
+                width: 1px;
+                height: 12px;
+                background-color: $white;
+                display: inline-block;
+                margin: 0 10px 0 5px;
+            }
+            
+            &:last-child{
+                &:after{
+                    display: none;
+                }
+            }
+            
+        }
+
+        &--text-strong{
+            font-weight: 700;
+            margin: 0 5px;
+        }
+    }
+
+    &__informatives-wrapper{
+        max-width: 495px;
+        @include flex();
+    }
+}
