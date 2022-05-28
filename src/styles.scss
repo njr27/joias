@@ -81,35 +81,36 @@
 
     &__menu-wrapper{
         position: relative;
+        display: inline-block;
     }
+
+   
 
     &__menu-department{
         text-decoration: none;
         color: $white;
         font-weight: 700;
-        font-size: calculator-rem(14);
-        
+        font-size: calculator-rem(14);        
+        height: 48px;
+        @include flex(center, center);
 
         &:hover{
-            color: $darkPurple;
-        }
+            color: $darkPurple;            
+        }       
         
+
     }
 
     &__menu-items{
+        display: none;
         position: absolute;
+        z-index: 1;
         top: 100%;
-        left: 0;
-        
+        left: 0;        
         width: 194px;        
         height: 40px;
-        margin-top: 16px;
-        opacity: 0;
-
-        &:hover{
-            opacity: 1;
-        }
-        
+       
+            
         
         &::before{
             content: "";
@@ -122,6 +123,11 @@
 
     }
 
+    &__menu-wrapper:hover .header__menu-items{
+        display: block;
+    }
+
+
     &__menu-category{
         text-decoration: none;
         color: $black;
@@ -133,7 +139,7 @@
         
         &:hover{
             background: $greyHover;
-            position: relative
+            width: 194px;            
         }
 
     }
