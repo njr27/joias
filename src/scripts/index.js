@@ -54,3 +54,23 @@ function constructMenuDesktop(json) {
 
 informativesTop()
 //requestMenuDesktop()
+
+
+function handleToogleMenu(){
+  const $menuMobile = document.querySelector('.header__menu-hamburger')
+  const $structureMenuMob = document.querySelector('.header__menu-wrapper-mobile')
+  const $closeMenuMob = document.querySelector('.header__menu-mobile-wrapper-img')
+
+
+  $menuMobile.addEventListener('click', function(){
+    $structureMenuMob.classList.add('active')
+  })
+
+  $closeMenuMob.addEventListener('click', function(){
+    $structureMenuMob.classList.remove('active')
+  })
+
+
+}
+
+handleToogleMenu()
