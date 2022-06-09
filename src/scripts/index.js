@@ -60,6 +60,10 @@ function handleToogleMenu(){
   const $menuMobile = document.querySelector('.header__menu-hamburger')
   const $structureMenuMob = document.querySelector('.header__menu-wrapper-mobile')
   const $closeMenuMob = document.querySelector('.header__menu-mobile-wrapper-img')
+  const $arrowSubmenu = document.querySelector('.arrow-submenu')
+  const $structureSubmenu = document.querySelector('.header__menu-mobile-subdepartment-wrapper')
+  const $arrowSubmenuList = document.querySelector('.header__menu-mobile-subdepartment--img')
+  const $structureSubmenuList = document.querySelector('.header__menu-mobile-subdepartment-list')
 
 
   $menuMobile.addEventListener('click', function(){
@@ -70,6 +74,15 @@ function handleToogleMenu(){
     $structureMenuMob.classList.remove('active')
   })
 
+  $arrowSubmenu.addEventListener('click', function(){
+    $structureSubmenu.classList.toggle('active')
+    $arrowSubmenu.classList.toggle('active')
+  })
+
+  $arrowSubmenuList.addEventListener('click', function(){
+    $arrowSubmenuList.classList.toggle('active')
+    $structureSubmenuList.classList.toggle('active')
+  })
 
 }
 
