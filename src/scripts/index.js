@@ -44,7 +44,35 @@ function constructMenuDesktop(json) {
   for(const menu of json){
     structureMenu += `<div class="header__menu-wrapper">
         <a href=${menu.url} class="header__menu-department">${menu.name}</a>
-      </div>    
+        ${
+          menu.children 
+          ? `
+          <div class="header__menu-items ${menu.name === "Turmalina" ? "turmalina" : ""}">
+          ${menu.children.map(function (child){
+            return `
+            <div class="header__menu-wrapper-category">
+            <a href=${child.url} class="header__menu-category">
+              ${child.name}
+              </a>
+                ${child.children  ? `
+                <div class="header__menu-sub-category">
+                  ${child.children.map(function(subChild){
+                    return `
+                      <a href=${subChild.url} class="header__menu-category">
+                        ${subChild.name}
+                      </a>
+                    `
+                  }).join('')}
+                </div>
+                ` : ``}
+            </div>
+            `
+          }).join('')}
+          </div>
+          `
+          : ""
+        } 
+        </div>    
     `
   }
 
@@ -53,7 +81,7 @@ function constructMenuDesktop(json) {
 }
 
 informativesTop()
-//requestMenuDesktop()
+requestMenuDesktop()
 
 
 function handleToogleMenu(){

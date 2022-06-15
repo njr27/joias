@@ -10,11 +10,11 @@
           },
           {
             "name": "Água Marinha - Azul",
-            "url": "/incolor"
+            "url": "/azul"
           },
           {
             "name": "Água Marinha - Verde",
-            "url": "/incolor"
+            "url": "/verde"
           }
         ]
       },  
@@ -32,7 +32,7 @@
       },
       {
         "name": "Tópazio Imperial",
-        "url": "/esmeralda"
+        "url": "/topazioimperial"
       },
       {
         "name": "Turmalina",
