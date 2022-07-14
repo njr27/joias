@@ -10,6 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&family=Ovo&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/plugins/slick.css" />
     <link rel="stylesheet" href="styles.css" />
     <title>Loja de Joias</title>
   </head>
@@ -151,7 +156,7 @@
                      
             <div class="header__menu-mobile-wrapper-list">
               
-              <div class="header__menu-mobile-items">
+              <!-- <div class="header__menu-mobile-items">
                 <img class="header__menu-mobile-items--img" src="./assets/user.png">
                 <a>Entre ou Cadastre-se</a>          
               </div>
@@ -220,24 +225,312 @@
                   <a>Safira - Cores Variadas</a>
                 </div>                
                 
-              </div>
+              </div> -->
               
 
 
 
 
-            </div>           
-            
+              
+                
+              </div>  
               <div class="header__menu-mobile-wrapper-img">
                 <div class="header__menu-mobile-wrapper-close">
                   <img src="./assets/close.png">
                 </div>
-              </div>
+              </div>         
 
         </div>
       </div>
       </section>
     </header>
+    <main class="body">
+      <section class="main-banner">
+        <div class="main-banner__container">
+          <img src="../src/assets/main-banner.png">
+          <img src="../src/assets/main-banner.png">
+          <img src="../src/assets/main-banner.png">
+        </div>
+        
+      </section>
+      <section class="body__main-banner-info">
+        <div class="body__main-banner-items">
+          <div class="body__main-banner-items-image">
+            <img src="./assets/padlock.png">            
+          </div>
+          <div class="body__main-banner-items-label">
+            <span class="body__main-banner-items-label title">Compra 100% segura</span>
+            <span class="body__main-banner-items-label sub-title">Seus dados ficam protegidos</span>
+          </div>
+        </div>
+
+        <div class="body__main-banner-items">
+          <div class="body__main-banner-items-image">
+            <img src="./assets/credit-card.png">            
+          </div>
+          <div class="body__main-banner-items-label">
+            <span class="body__main-banner-items-label title">Até 3x sem juros</span>
+            <span class="body__main-banner-items-label sub-title">Pague com o cartão de crédito</span>
+          </div>
+        </div>
+
+        <div class="body__main-banner-items">
+          <div class="body__main-banner-items-image">
+            <img src="./assets/truck.png">            
+          </div>
+          <div class="body__main-banner-items-label">
+            <span class="body__main-banner-items-label title">Receba no mesmo dia</span>
+            <span class="body__main-banner-items-label sub-title">Para região de São Paulo capital</span>
+          </div>
+        </div>
+
+        <div class="body__main-banner-items">
+          <div class="body__main-banner-items-image">
+            <img src="./assets/certificate.png">            
+          </div>
+          <div class="body__main-banner-items-label">
+            <span class="body__main-banner-items-label title">Produtos certificados</span>
+            <span class="body__main-banner-items-label sub-title">Certificação de autenticidade ENE2SE</span>
+          </div>
+        </div>
+
+      </section>
+
+      <article class="content">
+
+        <span class="content__title">Nossa <span class="content__title--bold">variedade</span> de pedras preciosas</span>
+
+        <nav class="content__showcasebox">
+
+          <div class="content__showcase"> 
+
+            <div class="content__showcase-item">
+              <img src="./assets/agua-marinha.png" class="content__showcase-item--img">
+              <span class="content__showcase-item--label">Água Marinha</span>
+            </div>
+
+            <div class="content__showcase-item">
+              <img src="./assets/ametista.png" class="content__showcase-item--img">
+              <span class="content__showcase-item--label">Ametista</span>
+            </div>
+
+            <div class="content__showcase-item">
+              <img src="./assets/berilo-amarelo.png" class="content__showcase-item--img">
+              <span class="content__showcase-item--label">Berilo Amarelo</span>
+            </div>
+
+            <div class="content__showcase-item">
+              <img src="./assets/berilo-verde.png" class="content__showcase-item--img">
+              <span class="content__showcase-item--label">Berilo Verde</span>
+            </div>
+
+            <div class="content__showcase-item">
+              <img src="./assets/citrino.png" class="content__showcase-item--img">
+              <span class="content__showcase-item--label">Citrino</span>
+            </div>
+
+            <div class="content__showcase-item">
+              <img src="./assets/esmeralda.png" class="content__showcase-item--img">
+              <span class="content__showcase-item--label">Esmeralda</span>
+            </div>
+
+            <div class="content__showcase-item">
+              <img src="./assets/kunzita.png" class="content__showcase-item--img">
+              <span class="content__showcase-item--label">Kunzita</span>
+            </div>        
+
+            <div class="content__showcase-item">
+              <img src="./assets/agua-marinha.png" class="content__showcase-item--img">
+              <span class="content__showcase-item--label">Água Marinha</span>
+            </div>
+
+            <div class="content__showcase-item">
+              <img src="./assets/ametista.png" class="content__showcase-item--img">
+              <span class="content__showcase-item--label">Ametista</span>
+            </div>
+
+            <div class="content__showcase-item">
+              <img src="./assets/berilo-amarelo.png" class="content__showcase-item--img">
+              <span class="content__showcase-item--label">Berilo Amarelo</span>
+            </div>
+
+            <div class="content__showcase-item">
+              <img src="./assets/berilo-verde.png" class="content__showcase-item--img">
+              <span class="content__showcase-item--label">Berilo Verde</span>
+            </div>
+
+            <div class="content__showcase-item">
+              <img src="./assets/citrino.png" class="content__showcase-item--img">
+              <span class="content__showcase-item--label">Citrino</span>
+            </div>
+
+            <div class="content__showcase-item">
+              <img src="./assets/esmeralda.png" class="content__showcase-item--img">
+              <span class="content__showcase-item--label">Esmeralda</span>
+            </div>
+
+            <div class="content__showcase-item">
+              <img src="./assets/kunzita.png" class="content__showcase-item--img">
+              <span class="content__showcase-item--label">Kunzita</span>
+            </div> 
+
+            <div class="content__showcase-item">
+              <img src="./assets/agua-marinha.png" class="content__showcase-item--img">
+              <span class="content__showcase-item--label">Água Marinha</span>
+            </div>
+
+            <div class="content__showcase-item">
+              <img src="./assets/ametista.png" class="content__showcase-item--img">
+              <span class="content__showcase-item--label">Ametista</span>
+            </div>
+
+            <div class="content__showcase-item">
+              <img src="./assets/berilo-amarelo.png" class="content__showcase-item--img">
+              <span class="content__showcase-item--label">Berilo Amarelo</span>
+            </div>
+
+            <div class="content__showcase-item">
+              <img src="./assets/berilo-verde.png" class="content__showcase-item--img">
+              <span class="content__showcase-item--label">Berilo Verde</span>
+            </div>
+
+            <div class="content__showcase-item">
+              <img src="./assets/citrino.png" class="content__showcase-item--img">
+              <span class="content__showcase-item--label">Citrino</span>
+            </div>
+
+            <div class="content__showcase-item">
+              <img src="./assets/esmeralda.png" class="content__showcase-item--img">
+              <span class="content__showcase-item--label">Esmeralda</span>
+            </div>
+
+            <div class="content__showcase-item">
+              <img src="./assets/kunzita.png" class="content__showcase-item--img">
+              <span class="content__showcase-item--label">Kunzita</span>
+            </div> 
+             
+
+          </div>
+
+
+      </nav>
+
+      </article> 
+
+      <span class="shelf-title">Nossos <span class="shelf-title--bold">lançamentos</span></span>
+
+      <section class="shelf">
+        
+        
+      </section>
+      
+      <article class="article">
+        <div class="article__text">
+          <span>
+            mais que uma pedra preciosa
+          </span>
+          <h3>
+            Preciosa para você
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus ullamcorper sagittis. Nullam semper vitae nisl sit amet auctor. Pellentesque lectus arcu, dignissim non fermentum vitae, dictum id nisi. Morbi ut imperdiet dolor. Nunc laoreet
+          </p>
+          <button>
+            Saiba mais
+          </button>
+        </div>
+        
+        <div class="article__img">
+          <img src="../src/assets/hands-info.png">
+          <img src="../src/assets/hands-info.png">
+          <img src="../src/assets/hands-info.png">
+        </div>
+      </article>
+
+      <span class="shelf-title shelf-title-2">Qualidade com os<span class="shelf-title--bold">melhores preços</span></span>
+
+      <section class="shelf-2">
+
+      </section>
+
+
+      <article class="emphasis">
+        <div class="emphasis__banner">
+          <h3>destaques</h3>
+          <h4>Gemas selecionadas para você</h4>
+        </div>
+
+        <div class="emphasis-box">
+          <div class="emphasis-image">
+            <h3>Turmalina
+              prata</h3>
+            <span>A pedra preciosa mais cobiçada, rara e encantadora do mundo, ao seu alcance.</span>
+          </div>
+          <section class="shelf-mini">
+        
+        
+          </section>
+
+        </div>
+
+      </article>
+
+
+
+
+      <article class="article-2">
+        <div class="article-2__text">
+          <span>
+            uma história de gerações
+          </span>
+          <h3>
+            Nossas origens
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus ullamcorper sagittis. Nullam semper vitae nisl sit amet auctor. Pellentesque lectus arcu, dignissim non fermentum vitae, dictum id nisi. Morbi ut imperdiet dolor. Nunc laoreet
+          </p>
+          <button>
+            conheça nossa história
+          </button>
+        </div>
+        
+        <div class="article-2__img">
+          <img src="../src/assets/grotto.png">
+        </div>
+      </article>
+
+
+      <div class="separator"></div>
+
+      <section class="head-insta">
+        <span class="head-insta-title">Siga<span class="head-insta-title--bold">@nivaldojunior00</span></span>
+        <div class="head-insta__info">
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus ullamcorper sagittis. Nullam semper vitae nisl sit amet auctor. Pellentesque lectus arcu, 
+          htc #htc #gemasepedras #pedraspreciosas</p>
+          
+          <div class="head-insta__social-media">
+            <span class="">Siga-nos</span>
+            <img src="../src/assets/facebook.png">
+            <img src="../src/assets/instagram.png">
+          </div>
+
+        </div>
+
+      </section>
+      <section class="insta-feed">      
+        
+      </section>
+
+      <div class="separator separator-2"></div>
+
+    </main>
   </body>
-  <script type="text/javascript" src="./scripts/index.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/plugins/slick.min.js"></script>
+    
+    <script type="module" src="./scripts/swipper-carrousel.js"></script>
+    <script type="text/javascript" src="./scripts/slick-custom.js"></script>
+    <script type="text/javascript" src="./scripts/index.js"></script>
 </html>
