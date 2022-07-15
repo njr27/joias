@@ -1,4 +1,4 @@
-$('.main-banner__container').slick({
+$('.body__main-banner-container').slick({
     infinity: true,
     dots: true,
 });

@@ -63,6 +63,9 @@
         @include media-mob(){
             margin: 22px 15px 0px 15px;             
         }
+
+
+        
     }
 
     &__logo {
@@ -120,6 +123,7 @@
     &__menu-wrapper{
         position: relative;
         display: inline-block;
+        z-index: 1;
         
         &--others{
             width: 100%;
@@ -195,20 +199,24 @@
 
     &__menu-wrapper:hover .header__menu-others{
         display: block;
+        background: $white;
     }
 
     &__menu-wrapper:hover .header__menu-items{
        display: block;
+       background: $white;
     }
     
     &__menu-wrapper:hover .header__menu-sub-items{
         display: block;
+        background: $white;
     }
 
     &__menu-wrapper-category{
+        
         &:hover{
             .header__menu-sub-category{
-
+                background: $white;
                 display: block;
 
             }
@@ -612,10 +620,26 @@
     height: 58px;
     width: 58px;
 }
-.body{
-      
 
+.zoom{         
+    transition: all 0.3s;
     
+}
+.zoom:hover{
+    transform: scale(1.1);
+}
+
+.jump{
+    transition: all 0.3s;
+}
+
+.jump:hover{
+    transform: translateY(-5px);
+}
+
+
+.body{
+           
 
     &__main-banner-info{
         background: $darkPurple;

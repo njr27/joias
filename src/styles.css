@@ -180,6 +180,7 @@ table {
 .header__menu-wrapper {
   position: relative;
   display: inline-block;
+  z-index: 1;
 }
 .header__menu-wrapper--others {
   width: 100%;
@@ -239,14 +240,18 @@ table {
 }
 .header__menu-wrapper:hover .header__menu-others {
   display: block;
+  background: #FFFFFF;
 }
 .header__menu-wrapper:hover .header__menu-items {
   display: block;
+  background: #FFFFFF;
 }
 .header__menu-wrapper:hover .header__menu-sub-items {
   display: block;
+  background: #FFFFFF;
 }
 .header__menu-wrapper-category:hover .header__menu-sub-category {
+  background: #FFFFFF;
   display: block;
 }
 .header__menu-category {
@@ -567,6 +572,22 @@ table {
   border-radius: 50%;
   height: 58px;
   width: 58px;
+}
+
+.zoom {
+  transition: all 0.3s;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+
+.jump {
+  transition: all 0.3s;
+}
+
+.jump:hover {
+  transform: translateY(-5px);
 }
 
 .body__main-banner-info {

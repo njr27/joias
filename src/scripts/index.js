@@ -443,7 +443,7 @@ function constructInstaFeed(photos){
 
 
 function instaFeef(){
-  fetch('https://feeds.behold.so/kXTcWj4mlu6TfO2Ntxaj')
+  fetch('https://feeds.behold.so/EPrSsFFOn7J4cpHER9nz')
   .then(data => data.json())
   .then(photos => {
     constructInstaFeed(photos)
