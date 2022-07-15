@@ -423,10 +423,21 @@ requestProducts3()
 function constructInstaFeed(photos){
   const $container = document.querySelector('.insta-feed')
   photos.map((photos) => {
+    if(photos.mediaType == "IMAGE" || photos.mediaType == "CAROUSEL_ALBUM"){
     const img = document.createElement('img')
     img.src = photos.mediaUrl
     img.classList.add('image-insta')
     $container.appendChild(img)
+    }else if(photos.mediaType == "VIDEO"){
+      const video = document.createElement('video')
+      video.src = photos.mediaUrl
+      video.autoplay = true
+      video.loop = true
+      video.muted = true
+      video.classList.add('image-insta')
+      $container.appendChild(video)
+      
+    }
   })
 }
 
