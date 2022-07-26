@@ -443,7 +443,7 @@ function constructInstaFeed(photos){
 
 
 function instaFeef(){
-  fetch('https://feeds.behold.so/EPrSsFFOn7J4cpHER9nz')
+  fetch('https://feeds.behold.so/uHXGsoBk6oK3qHgZkOFh')
   .then(data => data.json())
   .then(photos => {
     constructInstaFeed(photos)
@@ -451,3 +451,19 @@ function instaFeef(){
 }
 
 instaFeef()
+
+function toogleMenuFooter(){
+  $activeFooter = document.querySelectorAll('.footer-menu__category')
+
+  const sizeWindow = window.innerWidth
+
+  if(sizeWindow >= 1024) return
+
+  $activeFooter.forEach(function ($item){
+    $item.addEventListener('click', function(){
+      $item.classList.toggle('active')
+    })
+  })
+}
+
+toogleMenuFooter()
