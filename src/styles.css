@@ -123,6 +123,7 @@ table {
 @media (max-width: 1024px) {
   .header__container {
     margin: 22px 15px 0px 15px;
+    height: 148px;
   }
 }
 .header__logo {
@@ -354,7 +355,7 @@ table {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: -100%;
   height: 100vh;
@@ -362,7 +363,9 @@ table {
   transition: 300ms;
 }
 .header__menu-wrapper-mobile.active {
+  z-index: 1;
   left: 0;
+  position: fixed;
 }
 .header__menu-mobile-wrapper-list {
   background-color: #614B65;
@@ -417,6 +420,11 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.header__menu-mobile-wrapper-department a {
+  margin: 0;
 }
 .header__menu-mobile-department {
   background: #614B65;
@@ -425,6 +433,7 @@ table {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: auto;
 }
 .header__menu-mobile-department--img {
   width: 16px;
@@ -436,7 +445,6 @@ table {
 .header__menu-mobile a {
   text-decoration: none;
   font-size: 13px;
-  margin-left: 25px;
 }
 .header__menu-mobile {
   height: 50px;
@@ -597,6 +605,21 @@ table {
   transform: translateY(-5px);
 }
 
+@media (max-width: 360px) {
+  .body__main-banner-container {
+    height: 408px;
+  }
+}
+@media (max-width: 360px) {
+  .body__main-banner-container .slick-track img {
+    height: 408px;
+    width: 360px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: -720px;
+       object-position: -720px;
+  }
+}
 .body__main-banner-info {
   background: #614B65;
   color: #FFFFFF;
@@ -605,13 +628,47 @@ table {
   align-items: center;
   height: 80px;
 }
+@media (max-width: 360px) {
+  .body__main-banner-info .slick-prev {
+    background-image: url(./assets/arrow-prev-main.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: transparent;
+    width: 8px;
+    height: 10px;
+    border-radius: 0;
+    background-color: transparent;
+    margin-left: 15px;
+  }
+  .body__main-banner-info .slick-prev img {
+    display: none;
+  }
+}
+@media (max-width: 360px) {
+  .body__main-banner-info .slick-next {
+    background-image: url(./assets/arrow-next-main.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: transparent;
+    width: 8px;
+    height: 10px;
+    border-radius: 0;
+    background-color: transparent;
+    margin-right: 15px;
+  }
+  .body__main-banner-info .slick-next img {
+    display: none;
+  }
+}
 .body__main-banner-items {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 55px;
 }
-@media (min-width: 360px) {
+@media (max-width: 360px) {
   .body__main-banner-items {
     margin: 0;
   }

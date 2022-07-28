@@ -3,6 +3,11 @@ $('.body__main-banner-container').slick({
     dots: true,
 });
 
+
+
+
+
+
 $('.content__showcase').slick({
     infinity: true,
     dots: true,

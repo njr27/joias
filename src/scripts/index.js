@@ -468,22 +468,29 @@ function toogleMenuFooter(){
 
 toogleMenuFooter()
 
-function slickInfoBanner2(){
+function slickInfoBanner(){
   const windowWidth = window.innerWidth
-  console.log(windowWidth)
-  if(windowWidth > 768){
-    $('.footer-banner').slick({
-        slidesToShow: 4,
-        dots: false,
-        arrows: false,            
-    })
-  }else {
-    $('.footer-banner').slick({
+  if(windowWidth < 768){   
+    $('.body__main-banner-info').slick({
       slidesToShow: 1,
       dots: false,
       arrows: true,            
-  })
+    })
+  
+  }
+}
 
+slickInfoBanner()
+
+function slickInfoBanner2(){
+  const windowWidth = window.innerWidth
+  
+  if(windowWidth < 768){    
+    $('.footer-banner').slick({
+      slidesToShow: 1,
+      dots: false,
+      arrows: true            
+    })
   }
 }
 
