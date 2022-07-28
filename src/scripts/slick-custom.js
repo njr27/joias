@@ -17,6 +17,8 @@ $('.article__img').slick({
 });
 
 
+
+
 $prev = document.querySelectorAll('.slick-prev')
 $next = document.querySelectorAll('.slick-next')
 

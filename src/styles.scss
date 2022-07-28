@@ -519,6 +519,11 @@
         font-weight: 700;
         margin: 0 8px;
     }
+
+
+    @media (max-width: 360px){            
+        @include flex();
+    }
 }
 
 
@@ -651,6 +656,12 @@
     &__main-banner-items{
         @include flex();
         margin-right: 55px;
+
+        @media (min-width: 360px){ 
+            margin: 0;
+        }
+
+
 
         &:last-child{
             margin-right: 0px;
@@ -846,6 +857,12 @@
 
 .insta-feed{
     @include flex();
+
+    @media (min-width: 360px){            
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
 }
 
 
@@ -855,6 +872,12 @@
     object-fit: cover;
     border-radius: 10px;
 
+    @media (min-width: 360px){            
+        width: 157px;
+        height: 157px;
+        
+    }
+
 }
 
 .head-insta{        
@@ -862,15 +885,34 @@
     margin: 0 auto;
     color: $purple;
 
+
+    @media (max-width: 360px){
+        width: 100%;
+        padding: 25px;
+        
+    }
+
     &__info{
         @include flex(space-between);
         margin-bottom: 34px;
+        
 
         & p{
         width: 672px;
         font-weight: 400;
         font-size: 16px;
         line-height: 22px;
+
+            @media (max-width: 360px){            
+                width: auto;
+                text-align: center;
+                
+            }
+        }
+
+        @media (max-width: 360px){
+            flex-direction: column;
+            
         }
 
         
@@ -884,6 +926,10 @@
         }
         & img{
             margin-right: 31px;
+        }
+
+        @media (max-width: 360px){            
+            display: none;
         }
 
 
@@ -1280,25 +1326,82 @@
     background-color: transparent;
     color: $purple;
     margin-bottom: 33px;
+
+    
+
+    .slick-prev{
+        @media (max-width: 360px){
+            background-image: url(./assets/arrow-prev.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            background-color: transparent;
+            width: 8px;
+            height: 10px;
+            border-radius: 0;
+            background-color: transparent;
+
+            margin-left: 15px;
+
+            img{
+                display: none;
+            }
+        }
+    }
+
+    .slick-next{
+        @media (max-width: 360px){
+            background-image: url(./assets/arrow-next.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            background-color: transparent;
+            width: 8px;
+            height: 10px;
+            border-radius: 0;
+            background-color: transparent;
+
+            margin-right: 15px;
+
+            img{
+                display: none;
+            }
+        }
+    }
 }
 
 
 .last-footer{
     &__payment-way{
         padding: 45px 0;
+
+        span{
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+            text-transform: uppercase;
+            color: #000000;
+            margin-right: 17px;
+        }
+
+        @media (min-width: 360px){
+            flex-wrap: wrap;
+        }
+
         @include flex();
         &--flags{
             @include flex();
             gap: 20px;
             margin-right: 100px;
+            flex-wrap: wrap;
 
-            span{
-                font-weight: 700;
-                font-size: 14px;
-                line-height: 19px;
-                text-transform: uppercase;
-                color: #000000;
+            @media (max-width: 360px){
+                margin: 10px 0 47px 0;
+                gap: 7px;
             }
+
+
+            
         }
 
         &--vtexcert{
@@ -1318,6 +1421,16 @@
             font-size: 10px;
             line-height: 14px;
             color: $white;
+
+            @media (max-width: 360px){
+                text-align: center;
+                
+            }
+
+        }
+        @media (max-width: 360px){
+            height: auto;
+            padding: 10px 24px;
 
         }
     }

@@ -485,6 +485,13 @@ table {
   font-weight: 700;
   margin: 0 8px;
 }
+@media (max-width: 360px) {
+  .head-insta-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 .shelf, .shelf-2 {
   display: flex;
@@ -603,6 +610,11 @@ table {
   justify-content: center;
   align-items: center;
   margin-right: 55px;
+}
+@media (min-width: 360px) {
+  .body__main-banner-items {
+    margin: 0;
+  }
 }
 .body__main-banner-items:last-child {
   margin-right: 0px;
@@ -786,6 +798,12 @@ table {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 360px) {
+  .insta-feed {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
 
 .image-insta {
   width: 200px;
@@ -794,11 +812,23 @@ table {
      object-fit: cover;
   border-radius: 10px;
 }
+@media (min-width: 360px) {
+  .image-insta {
+    width: 157px;
+    height: 157px;
+  }
+}
 
 .head-insta {
   width: 1200px;
   margin: 0 auto;
   color: #9A7AA0;
+}
+@media (max-width: 360px) {
+  .head-insta {
+    width: 100%;
+    padding: 25px;
+  }
 }
 .head-insta__info {
   display: flex;
@@ -812,6 +842,17 @@ table {
   font-size: 16px;
   line-height: 22px;
 }
+@media (max-width: 360px) {
+  .head-insta__info p {
+    width: auto;
+    text-align: center;
+  }
+}
+@media (max-width: 360px) {
+  .head-insta__info {
+    flex-direction: column;
+  }
+}
 .head-insta__social-media {
   display: flex;
   justify-content: center;
@@ -823,6 +864,11 @@ table {
 }
 .head-insta__social-media img {
   margin-right: 31px;
+}
+@media (max-width: 360px) {
+  .head-insta__social-media {
+    display: none;
+  }
 }
 
 .separator {
@@ -1182,6 +1228,40 @@ table {
   color: #9A7AA0;
   margin-bottom: 33px;
 }
+@media (max-width: 360px) {
+  .footer-banner .slick-prev {
+    background-image: url(./assets/arrow-prev.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: transparent;
+    width: 8px;
+    height: 10px;
+    border-radius: 0;
+    background-color: transparent;
+    margin-left: 15px;
+  }
+  .footer-banner .slick-prev img {
+    display: none;
+  }
+}
+@media (max-width: 360px) {
+  .footer-banner .slick-next {
+    background-image: url(./assets/arrow-next.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: transparent;
+    width: 8px;
+    height: 10px;
+    border-radius: 0;
+    background-color: transparent;
+    margin-right: 15px;
+  }
+  .footer-banner .slick-next img {
+    display: none;
+  }
+}
 
 .last-footer__payment-way {
   padding: 45px 0;
@@ -1189,19 +1269,32 @@ table {
   justify-content: center;
   align-items: center;
 }
+.last-footer__payment-way span {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-right: 17px;
+}
+@media (min-width: 360px) {
+  .last-footer__payment-way {
+    flex-wrap: wrap;
+  }
+}
 .last-footer__payment-way--flags {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
   margin-right: 100px;
+  flex-wrap: wrap;
 }
-.last-footer__payment-way--flags span {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 19px;
-  text-transform: uppercase;
-  color: #000000;
+@media (max-width: 360px) {
+  .last-footer__payment-way--flags {
+    margin: 10px 0 47px 0;
+    gap: 7px;
+  }
 }
 .last-footer__payment-way--vtexcert {
   display: flex;
@@ -1222,4 +1315,15 @@ table {
   font-size: 10px;
   line-height: 14px;
   color: #FFFFFF;
+}
+@media (max-width: 360px) {
+  .last-footer__info p {
+    text-align: center;
+  }
+}
+@media (max-width: 360px) {
+  .last-footer__info {
+    height: auto;
+    padding: 10px 24px;
+  }
 }/*# sourceMappingURL=styles.css.map */
